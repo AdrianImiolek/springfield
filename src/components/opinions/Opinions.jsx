@@ -29,7 +29,7 @@ export default function Opinions(props) {
   ];
 
   return (
-    <section className="opinions wrapper p-3">
+    <section className="opinions wrapper p-3" data-usal="zoomin once">
       <div className="embla overflow-hidden" ref={emblaRef}>
         <div className="embla__container flex">
           {opinions.map((opinion, index) => (
