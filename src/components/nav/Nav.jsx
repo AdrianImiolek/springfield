@@ -46,7 +46,7 @@ export default function Nav() {
   return (
     <>
       <header
-        className={`header sticky top-0 z-100 w-full transition-colors duration-300 ${isScrolled ? 'bg-black/60' : ''}`} data-usal="zoomin once"
+        className={`header sticky top-0 z-100 w-full transition-colors duration-300 ${isScrolled ? 'bg-black/60' : ''}`}
       >
         <nav
           aria-label="Mobile navigation"
