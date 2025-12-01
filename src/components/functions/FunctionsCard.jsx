@@ -1,8 +1,6 @@
 export default function FunctionsCard({ title, text }) {
   return (
-    <div
-      className="card shadow-main rounded-4xl p-5 shadow-sm duration-300 hover:shadow-xl"
-    >
+    <div className="card shadow-main row-span-2 grid grid-rows-subgrid rounded-4xl p-5 shadow-sm duration-300 hover:shadow-xl">
       <h3 className="card__title text-h3 border-main border-b-2 pb-2">
         {title}
       </h3>

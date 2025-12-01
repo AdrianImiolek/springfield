@@ -46,7 +46,7 @@ export default function Prices(props) {
       <h2 className="prices__title text-h2 mt-5 mb-5" id="prices">
         Cennik
       </h2>
-      <div className="prices__cards grid justify-center gap-5 md:grid-cols-3">
+      <div className="prices__cards grid grid-rows-[1fr_auto] justify-center gap-5 md:grid-cols-3">
         {pricesCards.map((card, index) => (
           <PricesCard
             key={index}

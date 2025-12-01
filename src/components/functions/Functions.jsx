@@ -36,7 +36,7 @@ export default function Functions(props) {
       <h2 className="functions__title text-h2 mt-5 mb-5" id="features">
         Funkcje
       </h2>
-      <div className="functions__cards mt-3 grid justify-center gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <div className="functions__cards mt-3 grid grid-rows-[repeat(auto-fill,_auto_1fr)] justify-center gap-5 md:grid-cols-2 xl:grid-cols-3">
         {cardInfo.map((card, index) => (
           <FunctionsCard
             key={index}
