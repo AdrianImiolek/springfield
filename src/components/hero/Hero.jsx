@@ -56,7 +56,7 @@ export default function Hero() {
       <div className="hero__btn-container col-span-2 flex justify-center self-end">
         <button
           className="hero__btn bg-main h-10 w-10 animate-bounce cursor-pointer rounded-full lg:right-10 lg:bottom-10 lg:h-13 lg:w-13"
-          onClick={() => document.getElementById('functions')?.scrollIntoView()}
+          onClick={() => document.getElementById('features')?.scrollIntoView()}
         >
           <i className="bx bx-down-arrow-alt text-xl lg:text-2xl"></i>
         </button>
