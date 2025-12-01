@@ -2,10 +2,10 @@ export default function Contact() {
   return (
     <section
       className="contact wrapper justify flex flex-col overflow-hidden p-3 pb-10"
-      id="contact"
+      
       data-usal="split-item split-fade-r split-delay-500 once"
     >
-      <h2 className="contact__title text-h2 mt-5 mb-5">
+      <h2 className="contact__title text-h2 mt-5 mb-5" id="contact">
         Skontaktuj się z nami
       </h2>
       <div className="contact__grid grid grid-cols-1 gap-10 md:grid-cols-2">

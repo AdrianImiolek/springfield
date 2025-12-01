@@ -42,9 +42,10 @@ export default function Prices(props) {
     <section
       className="prices wrapper flex min-h-screen flex-col justify-center overflow-hidden p-3"
       data-usal="split-item split-fade-l split-delay-500 once"
-      id="prices"
     >
-      <h2 className="prices__title text-h2 mt-5 mb-5">Cennik</h2>
+      <h2 className="prices__title text-h2 mt-5 mb-5" id="prices">
+        Cennik
+      </h2>
       <div className="prices__cards grid justify-center gap-5 md:grid-cols-3">
         {pricesCards.map((card, index) => (
           <PricesCard

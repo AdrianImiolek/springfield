@@ -32,9 +32,8 @@ export default function Functions(props) {
     <section
       className="functions wrapper flex min-h-screen flex-col justify-center overflow-hidden p-3"
       data-usal="split-item split-fade-r split-delay-500 once"
-      id="features"
     >
-      <h2 className="functions__title text-h2 mt-5 mb-5" id="functions">
+      <h2 className="functions__title text-h2 mt-5 mb-5" id="features">
         Funkcje
       </h2>
       <div className="functions__cards mt-3 grid justify-center gap-5 md:grid-cols-2 xl:grid-cols-3">

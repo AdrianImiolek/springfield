@@ -83,7 +83,7 @@ export default function Nav() {
             <ul className="nav-mobile__links flex flex-col items-start justify-center gap-5">
               <li>
                 <a
-                  href="#functions"
+                  href="#features"
                   className="nav-mobile__link text-nav-mobile m-2 p-2"
                   onClick={toggleMenu}
                 >

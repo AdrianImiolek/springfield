@@ -24,9 +24,9 @@ export default function About(props) {
   return (
     <section
       className="about wrapper flex min-h-screen flex-col justify-center overflow-hidden p-3"
-      data-usal="split-item split-fade-l split-delay-100 once" id="about"
+      data-usal="split-item split-fade-l split-delay-100 once"
     >
-      <h2 className="about__title text-h2 mt-5 mb-5">O nas</h2>
+      <h2 className="about__title text-h2 mt-5 mb-5"  id="about">O nas</h2>
       {aboutSection.map((section, index) => (
         <AboutSection
           key={index}
