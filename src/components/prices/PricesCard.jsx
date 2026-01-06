@@ -1,6 +1,6 @@
 export default function PricesCard({ title, text, features, button }) {
   return (
-    <div className="price-card shadow-main row-span-2 grid grid-rows-subgrid justify-between rounded-4xl p-5 shadow-sm duration-300 hover:shadow-xl">
+    <div className="price-card shadow-main row-span-2  grid grid-rows-subgrid justify-between rounded-4xl p-5 shadow-sm duration-300 hover:shadow-xl">
       <div className="price-card__container">
         <h3 className="price-card__title text-h3">{title}</h3>
 
