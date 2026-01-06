@@ -18,7 +18,7 @@ export default function Contact() {
         </div>
 
         {/* INFORMACJE */}
-        <div className="contact__info text-body-sm flex flex-col justify-center">
+        <div className="contact__info text-body-sm flex flex-col">
           <h3 className="contact__header text-h3">Kontakt</h3>
 
           <p className="contact__text">

@@ -30,7 +30,7 @@ export default function Functions(props) {
 
   return (
     <section
-      className="functions wrapper flex min-h-screen flex-col justify-center overflow-hidden p-3"
+      className="functions wrapper flex flex-col justify-center overflow-hidden p-3 mt-5 mb-5"
       data-usal="split-item split-fade-r split-delay-500 once"
     >
       <h2 className="functions__title text-h2 mt-5 mb-5" id="features">
