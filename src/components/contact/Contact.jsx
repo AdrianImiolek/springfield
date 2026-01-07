@@ -31,7 +31,7 @@ export default function Contact() {
           </p>
 
           <p className="contact__text p-2">
-            <i className="bx bx-phone-call"></i> Adres: 58-506 Jelenia Góra,
+            <i class='bx bx-map-pin'></i> Adres: 58-506 Jelenia Góra,
             Aleja Jana Pawła II 51
           </p>
 
