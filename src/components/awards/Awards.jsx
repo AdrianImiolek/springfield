@@ -36,7 +36,7 @@ export default function Awards(props) {
 
   return (
     <section className="awards wrapper overflow-hidden" data-usal="split-item split-fade-r split-delay-500 once">
-      <div className="awards__cards grid justify-center gap-5 p-3 md:grid-cols-3">
+      <div className="awards__cards grid justify-center gap-5 p-3  sm:grid-cols-2 md:grid-cols-3">
         {awards.map((award, index) => (
           <AwardsCard
             key={index}

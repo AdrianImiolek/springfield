@@ -2,7 +2,6 @@ export default function Contact() {
   return (
     <section
       className="contact wrapper justify flex flex-col overflow-hidden p-3 pb-10"
-      
       data-usal="split-item split-fade-r split-delay-500 once"
     >
       <h2 className="contact__title text-h2 mt-5 mb-5" id="contact">
@@ -20,8 +19,28 @@ export default function Contact() {
         {/* INFORMACJE */}
         <div className="contact__info text-body-sm flex flex-col">
           <h3 className="contact__header text-h3">Kontakt</h3>
+          <p className="contact__text p-2">
+            <i className="bx bx-mail-send"></i> E-mail:
+            <a
+              href="mailto:wymyślonyemail@domena.pl"
+              className="hover:text-main duration-300"
+            >
+              {' '}
+              springfield@kontakt.pl
+            </a>
+          </p>
 
-          <p className="contact__text">
+          <p className="contact__text p-2">
+            <i className="bx bx-phone-call"></i> Adres: 58-506 Jelenia Góra,
+            Aleja Jana Pawła II 51
+          </p>
+
+          <p className="contact__text p-2">
+            <i className="bx bx-help-circle"></i> Biuro obsługi klienta pracuje
+            od poniedziałku do piątku w godzinach: 9:00 - 17:00
+          </p>
+
+          <p className="contact__text p-2">
             <i className="bx bx-phone-call"></i> Kontakt telefoniczny:
             <a
               href="tel:+48 999 000 111"
@@ -31,27 +50,6 @@ export default function Contact() {
               +48 999 000 111
             </a>
           </p>
-
-          <p className="contact__text">
-            <i className="bx bx-mail-send"></i> E-mail:
-            <a
-              href="mailto:wymyślonyemail@domena.pl"
-              className="hover:text-main duration-300"
-            >
-              {' '}
-              wymyślonyemail@domena.pl
-            </a>
-          </p>
-
-          <p className="contact__text">
-            <i className="bx bx-phone-call"></i> Adres: 58-506 Jelenia Góra,
-            Wymyślona Nazwa 12/27
-          </p>
-
-          <p className="contact__text">
-            <i className="bx bx-help-circle"></i> Biuro obsługi klienta działa w
-            godzinach: 9:00 - 17:00
-          </p>
         </div>
 
         {/* SOCIAL MEDIA */}
@@ -60,7 +58,7 @@ export default function Contact() {
             Wpadnij do nas na:
           </h3>
 
-          <div className="contact__socials-container mt-5 flex flex-col justify-around md:flex-row">
+          <div className="contact__socials-container flex flex-col justify-around md:flex-row lg:mt-5">
             <a
               href="https://discord.com/your-server"
               aria-label="Dołącz do naszego Discorda"
