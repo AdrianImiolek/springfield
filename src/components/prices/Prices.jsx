@@ -1,59 +1,62 @@
 import PricesCard from './PricesCard';
 
-export default function Prices(props) {
-  const pricesCards = [
+export default function Prices() {
+  const prices = [
     {
-      title: 'Starter',
-      text: 'Dla freelancerów i małych zespołów zaczynających pracę z Springfield.',
-      features: [
-        'Do 3 aktywnych projektów',
-        'Integracja z Slackiem i Notion',
-        '2 GB przestrzeni na pliki',
-        'Podstawowe raporty i statystyki',
+      id: 1,
+      title: 'Free',
+      price: 0,
+      pricePerSeat: 'Za darmo na zawsze',
+      list: [
+        'Podstawowe zarządzanie zadaniami',
+        'Śledzenie czasu',
+        'Integracja z 1 narzędziem',
+        '1GB przestrzeni dyskowej',
       ],
-      button: 'Zacznij za darmo',
     },
     {
+      id: 2,
+      title: 'Basic',
+      price: 35,
+      pricePerSeat: 'Użytkownik / miesiąc',
+      list: [
+        'Pełny CRM',
+        'Analiza danych i raporty KPI',
+        'Automatyzacja (250 akcji / miesiąc)',
+        'Integracja z 10 narzędziami',
+        'Współpraca zespołowa',
+        '20GB przestrzeni dyskowej',
+      ],
+    },
+    {
+      id: 3,
       title: 'Pro',
-      text: 'Dla zespołów, które chcą usprawnić komunikację i przepływ pracy.',
-      features: [
-        'Nielimitowane projekty',
-        'Zaawansowane dashboardy i automatyzacje',
-        '20 GB przestrzeni na pliki',
-        'Priorytetowe wsparcie',
+      price: 80,
+      pricePerSeat: 'Użytkownik / miesiąc',
+      list: [
+        'Asystent AI',
+        'Zaawansowana automatyzacja (bez limitu)',
+        'Nieograniczone integracje',
+        'Zaawansowana analityka i raporty',
+        'Nieograniczona przestrzeń dyskowa',
+        'Dedykowany opiekun klienta 24/7',
       ],
-      button: 'Wybierz Pro',
-    },
-    {
-      title: 'Business',
-      text: 'Dla firm potrzebujących pełnej kontroli, bezpieczeństwa i raportowania.',
-      features: [
-        'Wszystko z planu Pro',
-        'Dedykowany opiekun konta',
-        'Własna domena i branding',
-        'Integracje z API i SSO',
-        'Analityka zespołowa i eksport danych',
-      ],
-      button: 'Skontaktuj się z nami',
     },
   ];
 
   return (
-    <section
-      className="prices wrapper flex flex-col justify-center overflow-hidden p-3 mt-5 mb-5 pb-10"
-      data-usal="split-item split-fade-l split-delay-500 once"
-    >
-      <h2 className="prices__title text-h2 mt-5 mb-5" id="prices">
-        Cennik
-      </h2>
-      <div className="prices__cards grid grid-rows-[1fr_auto] justify-center gap-5 md:grid-cols-3">
-        {pricesCards.map((card, index) => (
+    <section className="prices wrapper pt-20 pb-20">
+      <h2 className="text-h2 m-5 text-center"><span className="gradient-blue-to-green">Ceny</span> </h2>
+
+      <div className="cards grid grid-cols-1  sm:grid-cols-2  gap-10 lg:grid-cols-3">
+        {prices.map((price) => (
           <PricesCard
-            key={index}
-            title={card.title}
-            text={card.text}
-            features={card.features}
-            button={card.button}
+            key={price.id}
+            index={price.id}
+            title={price.title}
+            price={price.price}
+            pricePerSeat={price.pricePerSeat}
+            list={price.list}
           />
         ))}
       </div>

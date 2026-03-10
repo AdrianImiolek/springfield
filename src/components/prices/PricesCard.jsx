@@ -1,22 +1,74 @@
-export default function PricesCard({ title, text, features, button }) {
-  return (
-    <div className="price-card shadow-main row-span-2  grid grid-rows-subgrid justify-between rounded-4xl p-5 shadow-sm duration-300 hover:shadow-xl">
-      <div className="price-card__container">
-        <h3 className="price-card__title text-h3">{title}</h3>
+import Waves from '../Waves/WavesTop';
 
-        <p className="price-card__text text-body">{text}</p>
-        <h4 className="price-card__functions text-h4 mt-5">Funkcje</h4>
-        <ul className="price-card__list mt-1 inline-block">
-          {features.map((feature, index) => (
-            <li key={index} className="price-card__list-item text-body-sm mt-1">
-              {feature}
+export default function Card({ index, title, list, price, pricePerSeat }) {
+  const wavesOpacity = [0.6, 0.4, 0.3];
+  const blueColor = [
+    'border-main-blue',
+    'shadow-main-blue',
+    'fill-main-blue',
+    'bg-main-blue/10',
+  ];
+  const pinkColor = [
+    'border-main-pink',
+    'shadow-main-pink',
+    'fill-main-pink',
+    'bg-main-pink/10',
+  ];
+  const greenColor = [
+    'border-main-green',
+    'shadow-main-green',
+    'fill-main-green',
+    'bg-main-green/10',
+  ];
+
+  const colors = [
+    {
+      id: 1,
+      color: pinkColor[0],
+      shadow: pinkColor[1],
+      fill: pinkColor[2],
+      opacity: wavesOpacity,
+      bg: pinkColor[3],
+    },
+    {
+      id: 2,
+      color: blueColor[0],
+      shadow: blueColor[1],
+      fill: blueColor[2],
+      opacity: wavesOpacity,
+      bg: blueColor[3],
+    },
+    {
+      id: 3,
+      color: greenColor[0],
+      shadow: greenColor[1],
+      fill: greenColor[2],
+      opacity: wavesOpacity,
+      bg: greenColor[3],
+    },
+  ];
+
+  const style = colors[index % 3];
+
+  return (
+    <div
+      className={`card flex flex-col justify-between transform-gpu  overflow-hidden rounded-2xl border-1 shadow-md ${index === 3 ? "col-span-2" : ""} ${style.color} ${style.shadow} ${style.bg} lg:col-span-1`}
+    >
+      <div className="p-4">
+        <h3 className="text-h3 text-left">{title}</h3>
+        <p className="text-body">{price} zł</p>
+        <p> {pricePerSeat}</p>
+        <ul className="text-left">
+          {list.map((item, index) => (
+            <li key={index} className="text-body-sm text-gray-800">
+              {item}
             </li>
           ))}
         </ul>
       </div>
-      <button className="price-card__button text-button bg-main hover:bg-main-dark mt-5 cursor-pointer rounded-4xl p-2 duration-300">
-        {button}
-      </button>
+      <div className="rotate-180 w-[120%]">
+        <Waves style={style} />
+      </div>
     </div>
   );
 }

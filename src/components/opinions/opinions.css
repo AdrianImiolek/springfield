@@ -1,0 +1,29 @@
+.carousel-opinions {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-opinions-inner {
+  display: flex;
+  width: max-content;
+  animation: spin-right 100s infinite linear;
+}
+.carousel-opinions-inner:hover {
+  animation-play-state: paused;
+}
+
+.card-opinion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;}
+
+
+@keyframes spin-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+    --color-main-pink: #ef898b;
+    --color-main-pink-dark: #9e5657;
+    --color-main-pink-light: #ffa2a4;
+    --color-main-blue: #518CA9;
+    --color-main-blue-light: #51BBA9;
+    --color-main-green: #51A951;
+    --color-main-green-light: #51DC51;
+    --color-black: #160606;
+    --color-white: #ffffff;
+    --color-main-dark: #b36667;
+    --color-footer: #362b32;
+
+   /* Hero Section */
+    --text-hero: clamp(2.5rem, 2rem + 4vw, 5rem);          /* Main headline */
+    --text-hero-sub: clamp(1.25rem, 1rem + 1vw, 2rem);     /* Subheadline/tagline */
+    
+    /* Headings */
+    --text-h1: clamp(1rem, 1.5rem + 2.5vw, 3.5rem);        /* Page titles */
+    --text-h2: clamp(1rem, 1.25rem + 2vw, 3rem);        /* Section titles */
+    --text-h3: clamp(0.7rem, 0.7rem + 1.2vw, 2rem);        /* Subsection titles */
+    --text-h4: clamp(0.5rem, 0.7rem + 0.8vw, 2rem);           /* Small headings */
+    
+    --text-icons: clamp(2rem, 2rem + 0.5vw, 3rem);
+    /* Body Text */
+    --text-body-lg: clamp(1.125rem, 1rem + 0.5vw, 1.5rem); /* Large paragraphs/intros */
+    --text-body: clamp(1rem, 1rem + 0.7vw, 1.8rem);   /* Regular body text */
+    --text-body-sm: clamp(0.875rem, 0.80rem + 0.5vw, 1.1rem); /* Small text/captions */
+    --text-body-xsm: clamp(0.875rem, 0.75rem + 0.5vw, 0.9rem);
+    
+    /* Navigation */
+    --text-nav-desktop: clamp(1rem, 1rem + 0.75vw, 3rem);
+    --text-nav-mobile: clamp(1.5rem, 1rem + 1vw, 1.75rem);
+    
+    /* Buttons/CTAs */
+    --text-button-lg: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
+    --text-button: clamp(1rem, 0.875rem + 0.5vw, 1.25rem);
+
+    /* Width */
+    --width-logos: clamp(2rem, 2rem + 3vw, 10rem );
+}

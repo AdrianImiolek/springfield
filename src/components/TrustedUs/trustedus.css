@@ -1,0 +1,32 @@
+.carousel-trusted-us {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-trusted-us-inner {
+  display: flex;
+  width: max-content;
+  animation: spin-left 50s infinite linear;
+}
+.carousel-trusted-us-inner:hover {
+  animation-play-state: paused;
+}
+
+.carousel-trusted-us-group {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-trusted-us-card {
+  text-align: center;
+  align-content: center;
+}
+
+@keyframes spin-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
