@@ -1,14 +1,13 @@
-import Footer from '../../../components/Footer/Footer';
 import Nav from '../../../components/Nav/Nav';
 import Ai from '../../../components/Ai/Ai';
 import Faq from '../../../components/Faq/Faq';
 import Features from '../../../components/Features/Features';
-import HowItWorks from '../../../components/HowItWorks/HowItWorks';
 import Opinions from '../../../components/Opinions/Opinions';
 import Prices from '../../../components/Prices/Prices';
 import TrustedUs from '../../../components/TrustedUs/TrustedUs';
 import Motion from '../../../components/Motion/Motion';
 import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 
 export default function HomePage() {
   return (
@@ -26,7 +25,7 @@ export default function HomePage() {
           <Opinions />
           <Faq />
         </main>
-        <Footer />
+       <Footer />
       </Motion>
     </>
   );
