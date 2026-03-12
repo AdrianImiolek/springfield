@@ -45,10 +45,12 @@ export default function Prices() {
   ];
 
   return (
-    <section className="prices wrapper pt-20 pb-20">
-      <h2 className="text-h2 m-5 text-center"><span className="gradient-blue-to-green">Ceny</span> </h2>
+    <section className="prices wrapper pt-20 pb-20" id="prices">
+      <h2 className="text-h2 m-5 text-center">
+        <span className="gradient-blue-to-green">Ceny</span>{' '}
+      </h2>
 
-      <div className="cards grid grid-cols-1  sm:grid-cols-2  gap-10 lg:grid-cols-3">
+      <div className="cards grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {prices.map((price) => (
           <PricesCard
             key={price.id}
