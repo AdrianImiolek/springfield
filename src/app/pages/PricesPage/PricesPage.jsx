@@ -3,7 +3,7 @@ import Footer from '../../../components/Footer/Footer';
 import Header from '../../../components/Header/Header';
 import Prices from '../../../components/Prices/Prices';
 import Faq from '../../../components/Faq/Faq';
-
+import Motion from '../../../components/Motion/Motion';
 
 export default function PricesPage() {
   return (
@@ -12,13 +12,13 @@ export default function PricesPage() {
         <Nav />
         <Header page={'prices'} />
       </header>
-
-      <main className="main">
-        
-      <Prices />
-      <Faq page={"prices"} />
-      </main>
-      <Footer />
+      <Motion>
+        <main className="main">
+          <Prices />
+          <Faq page={'prices'} />
+        </main>
+        <Footer />
+      </Motion>
     </>
   );
 }

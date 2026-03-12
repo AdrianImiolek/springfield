@@ -51,7 +51,20 @@ export const headerData = [{
     hoverColor: "#ffa2a4",
     text: "Springfield oferuje elastyczne plany dopasowane do potrzeb zespołów i firm. Wybierz plan, który najlepiej odpowiada Twoim wymaganiom i rozwijaj swój biznes bez ograniczeń.",
     button: { text: "Cennik", link: "#prices" }
+},
+{
+    id: 5,
+    page: "contact",
+    heading: {
+        textBefore: "Jesteś",
+        highlight: "świadom",
+        textAfter: "co kupujesz",
+        gradient: "gradient-blue-to-pink"
+    },
+    color: "#ef898b",
+    hoverColor: "#ffa2a4",
+    text: "Springfield oferuje elastyczne plany dopasowane do potrzeb zespołów i firm. Wybierz plan, który najlepiej odpowiada Twoim wymaganiom i rozwijaj swój biznes bez ograniczeń.",
+    button: { text: "Cennik", link: "#prices" }
 }
-
 
 ]
