@@ -56,15 +56,15 @@ export const headerData = [{
     id: 5,
     page: "contact",
     heading: {
-        textBefore: "Jesteś",
-        highlight: "świadom",
-        textAfter: "co kupujesz",
-        gradient: "gradient-blue-to-pink"
+        textBefore: "Skontaktuj się z",
+        highlight: "nami",
+        textAfter: "",
+        gradient: "gradient-green-to-blue"
     },
     color: "#ef898b",
     hoverColor: "#ffa2a4",
-    text: "Springfield oferuje elastyczne plany dopasowane do potrzeb zespołów i firm. Wybierz plan, który najlepiej odpowiada Twoim wymaganiom i rozwijaj swój biznes bez ograniczeń.",
-    button: { text: "Cennik", link: "#prices" }
+    text: "Masz pytania dotyczące Springfield lub potrzebujesz pomocy? Nasz zespół chętnie odpowie na Twoje pytania i pomoże dobrać najlepsze rozwiązanie dla Twojej firmy.",
+    button: { text: "Zadaj nam pytanie", link: "#contact" }
 }
 
 ]
