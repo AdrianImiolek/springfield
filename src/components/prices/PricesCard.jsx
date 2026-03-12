@@ -1,6 +1,12 @@
 import Waves from '../Waves/WavesTop';
 
-export default function Card({ index, title, list, price, pricePerSeat }) {
+export default function Card({
+  index,
+  title,
+  list,
+  price,
+  pricePerSeat,
+}) {
   const wavesOpacity = [0.6, 0.4, 0.3];
   const blueColor = [
     'border-main-blue',
@@ -52,7 +58,7 @@ export default function Card({ index, title, list, price, pricePerSeat }) {
 
   return (
     <div
-      className={`card flex flex-col justify-between transform-gpu  overflow-hidden rounded-2xl border-1 shadow-md ${index === 3 ? "col-span-2" : ""} ${style.color} ${style.shadow} ${style.bg} lg:col-span-1`}
+      className={`card flex transform-gpu flex-col justify-between overflow-hidden rounded-2xl border-1 shadow-md ${index === 3 ? 'col-span-2' : ''} ${style.color} ${style.shadow} ${style.bg} lg:col-span-1`}
     >
       <div className="p-4">
         <h3 className="text-h3 text-left">{title}</h3>
@@ -66,7 +72,7 @@ export default function Card({ index, title, list, price, pricePerSeat }) {
           ))}
         </ul>
       </div>
-      <div className="rotate-180 w-[120%]">
+      <div className="w-[120%] rotate-180">
         <Waves style={style} />
       </div>
     </div>

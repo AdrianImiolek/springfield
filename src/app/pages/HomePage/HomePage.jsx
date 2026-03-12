@@ -23,7 +23,7 @@ export default function HomePage() {
           <Ai />
           <Prices />
           <Opinions />
-          <Faq />
+          <Faq page={"home"} />
         </main>
        <Footer />
       </Motion>

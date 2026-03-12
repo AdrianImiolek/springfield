@@ -2,8 +2,10 @@ import { ArrowRightStroke } from '@boxicons/react';
 import { Link } from 'react-router-dom';
 import Motion from '../Motion/Motion';
 import { headerData } from './header.data';
+import { useState } from 'react';
 
 export default function Header({ page }) {
+  const [isHovered, setIsHovered] = useState(false);
   const header = headerData.find((h) => h.page === page);
   return (
     <Motion>
@@ -36,7 +38,12 @@ export default function Header({ page }) {
           {header.button.link.charAt(0) === '/' ? (
             <Link
               to={header.button.link}
-              className="bg-main-pink text-body-sm hover:bg-main-pink-light m-1 flex cursor-pointer items-center rounded-3xl p-3 transition-colors duration-300"
+              style={{
+                backgroundColor: isHovered ? header.hoverColor : header.color,
+              }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className={`${header.color} text-body-sm hover:${header.hoverColor} m-1 flex cursor-pointer items-center rounded-3xl p-3 transition-colors duration-300`}
             >
               {header.button.text}
               <ArrowRightStroke />
@@ -44,9 +51,15 @@ export default function Header({ page }) {
           ) : (
             <a
               href={header.button.link}
-              className="bg-main-blue text-body-sm hover:bg-main-blue-light m-1 flex cursor-pointer items-center rounded-3xl p-3 transition-colors duration-300"
+              style={{
+                backgroundColor: isHovered ? header.hoverColor : header.color,
+              }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className={`${header.color} text-body-sm hover:${header.hoverColor} m-1 flex cursor-pointer items-center rounded-3xl p-3 transition-colors duration-300`}
             >
               {header.button.text}
+              <ArrowRightStroke />
             </a>
           )}
         </div>

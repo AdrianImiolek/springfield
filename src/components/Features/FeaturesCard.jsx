@@ -75,7 +75,7 @@ export default function FeaturesCard({ title, text, index, features }) {
 
   return (
     <div
-      className={`features-card transform-gpu overflow-hidden rounded-2xl border-1 shadow-md  ${style.color} ${style.shadow} ${style.bg} `} id="funkcje"
+      className={`features-card transform-gpu overflow-hidden rounded-2xl border-1 shadow-md  ${style.color} ${style.shadow} ${style.bg} `}
     >
       <div className="w-[120%]">
         <WavesTop style={style} />
