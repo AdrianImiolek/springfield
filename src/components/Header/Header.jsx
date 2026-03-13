@@ -7,6 +7,7 @@ import { useState } from 'react';
 export default function Header({ page }) {
   const [isHovered, setIsHovered] = useState(false);
   const header = headerData.find((h) => h.page === page);
+
   return (
     <Motion>
       <section className="hero wrapper pt-20 pb-20">
@@ -50,6 +51,12 @@ export default function Header({ page }) {
             </Link>
           ) : (
             <a
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .querySelector(header.button.link)
+                  .scrollIntoView({ behavior: 'smooth' });
+              }}
               href={header.button.link}
               style={{
                 backgroundColor: isHovered ? header.hoverColor : header.color,
