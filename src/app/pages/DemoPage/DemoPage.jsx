@@ -8,7 +8,7 @@ export default function DemoPage() {
       <Motion>
         <div className="flex justify-center items-center">
           <img
-            className="absolute -z-10 bottom-0 h-full opacity-20"
+            className="absolute -z-10 bottom-0 h-full opacity-20 object-cover"
             src="/ai/spring-AI.png"
           />
           <div className="under-construction flex h-[90vh] w-full items-center justify-center">

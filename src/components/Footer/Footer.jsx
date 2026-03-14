@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="footer bg-footer text-white">
       <div className="wrapper text-body-sm">
         <div>
-          <ul className="flex"
+          <ul className="flex flex-col"
         >
           {links.map(({ title, link_to }, index) => (
             <li className="m-2 p-2 " key={index}>

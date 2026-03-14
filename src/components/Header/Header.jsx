@@ -44,7 +44,7 @@ export default function Header({ page }) {
               }}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className={`${header.color} text-body-sm hover:${header.hoverColor} m-1 flex cursor-pointer items-center rounded-3xl p-3 transition-colors duration-300`}
+              className={`${header.color} cta-btn text-body-sm hover:${header.hoverColor} m-1 flex cursor-pointer items-center rounded-3xl p-3 transition-colors duration-300`}
             >
               {header.button.text}
               <ArrowRightStroke />
@@ -63,7 +63,7 @@ export default function Header({ page }) {
               }}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className={`${header.color} text-body-sm hover:${header.hoverColor} m-1 flex cursor-pointer items-center rounded-3xl p-3 transition-colors duration-300`}
+              className={`${header.color} cta-btn text-body-sm hover:${header.hoverColor} m-1 flex cursor-pointer items-center rounded-3xl p-3 transition-colors duration-300`}
             >
               {header.button.text}
               <ArrowRightStroke />

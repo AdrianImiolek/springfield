@@ -16,7 +16,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="nav lg:backdrop-blur-sm fixed top-0 z-90 w-full bg-white/50">
+    <nav className="nav overflow-hidden lg:backdrop-blur-sm fixed w-full top-0 z-90 bg-white/50">
       <div
         className={`overflow fixed top-0 bottom-0 w-full bg-black/80 backdrop-blur-sm ${isOpen ? 'left-[0]' : 'left-full'} lg:hidden`}
         onClick={toggleMenu}

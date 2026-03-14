@@ -58,7 +58,7 @@ export default function Card({
 
   return (
     <div
-      className={`card flex transform-gpu flex-col justify-between overflow-hidden rounded-2xl border-1 shadow-md ${index === 3 ? 'col-span-2' : ''} ${style.color} ${style.shadow} ${style.bg} lg:col-span-1`}
+      className={`card flex transform-gpu flex-col justify-between overflow-hidden rounded-2xl border-1 shadow-md ${index === 3 ? 'sm:col-span-2' : ''} ${style.color} ${style.shadow} ${style.bg} lg:col-span-1`}
     >
       <div className="p-4">
         <h3 className="text-h3 text-left">{title}</h3>
