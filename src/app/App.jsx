@@ -5,6 +5,7 @@ import PricesPage from './pages/PricesPage/PricesPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import DemoPage from './pages/DemoPage/DemoPage';
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage'
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
 
@@ -20,8 +21,10 @@ function App() {
           <Route path="/cennik" element={<PricesPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/demo" element={<DemoPage />} />
+          <Route path="/polityka-prywatnosci" element={<PrivacyPolicyPage />} />
         </Routes>
       </Router>
+      
   );
 }
 

@@ -4,6 +4,7 @@ import Header from '../../../components/Header/Header';
 import Prices from '../../../components/Prices/Prices';
 import Faq from '../../../components/Faq/Faq';
 import Motion from '../../../components/Motion/Motion';
+import Cookies from '../../../components/Cookies/Cookies';
 
 export default function PricesPage() {
   return (
@@ -18,6 +19,7 @@ export default function PricesPage() {
           <Faq page={'prices'} />
         </main>
         <Footer />
+        <Cookies />
       </Motion>
     </>
   );

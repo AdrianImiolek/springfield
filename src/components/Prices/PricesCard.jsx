@@ -1,4 +1,4 @@
-import Waves from '../Waves/WavesTop';
+import WavesBottom from '../Waves/WavesBottom';
 
 export default function Card({
   index,
@@ -72,9 +72,7 @@ export default function Card({
           ))}
         </ul>
       </div>
-      <div className="w-[120%] rotate-180">
-        <Waves style={style} />
-      </div>
+        <WavesBottom style={style} />
     </div>
   );
 }

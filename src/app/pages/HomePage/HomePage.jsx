@@ -8,13 +8,14 @@ import TrustedUs from '../../../components/TrustedUs/TrustedUs';
 import Motion from '../../../components/Motion/Motion';
 import Header from '../../../components/Header/Header';
 import Footer from '../../../components/Footer/Footer';
+import Cookies from '../../../components/Cookies/Cookies';
 
 export default function HomePage() {
   return (
     <>
       <header className="header">
         <Nav />
-        <Header page={"home"}/>
+        <Header page={'home'} />
       </header>
       <Motion>
         <main className="main">
@@ -23,9 +24,10 @@ export default function HomePage() {
           <Ai />
           <Prices />
           <Opinions />
-          <Faq page={"home"} />
+          <Faq page={'home'} />
         </main>
-       <Footer />
+        <Cookies />
+        <Footer />
       </Motion>
     </>
   );

@@ -20,13 +20,13 @@
     /* Headings */
     --text-h1: clamp(1rem, 1.5rem + 2.5vw, 3.5rem);        /* Page titles */
     --text-h2: clamp(1rem, 1.25rem + 2vw, 3rem);        /* Section titles */
-    --text-h3: clamp(0.7rem, 0.7rem + 1.2vw, 2rem);        /* Subsection titles */
+    --text-h3: clamp(0.7rem, 1rem + 1.3vw, 2rem);        /* Subsection titles */
     --text-h4: clamp(0.5rem, 0.7rem + 0.8vw, 2rem);           /* Small headings */
     
     --text-icons: clamp(2rem, 2rem + 0.5vw, 3rem);
     /* Body Text */
     --text-body-lg: clamp(1.125rem, 1rem + 0.5vw, 1.5rem); /* Large paragraphs/intros */
-    --text-body: clamp(1rem, 1rem + 0.7vw, 1.8rem);   /* Regular body text */
+    --text-body: clamp(1rem, 1rem + 0.5vw, 1.8rem);   /* Regular body text */
     --text-body-sm: clamp(0.875rem, 0.80rem + 0.5vw, 1.1rem); /* Small text/captions */
     --text-body-xsm: clamp(0.875rem, 0.75rem + 0.5vw, 0.9rem);
     

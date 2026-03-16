@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Nav() {
   const links = [
@@ -11,19 +11,33 @@ export default function Nav() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0); // true if scrolled, false if at top
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll); // cleanup
+  }, []);
+
   return (
-    <nav className="nav overflow-hidden lg:backdrop-blur-sm fixed w-full top-0 z-90 bg-white/50">
+    <nav
+      className={`nav fixed top-0 z-90 w-full overflow-hidden bg-white/50 lg:backdrop-blur-sm transition-shadow duration-300 ${isScrolled ? `shadow-xl` : ``}`}
+    >
       <div
         className={`overflow fixed top-0 bottom-0 w-full bg-black/80 backdrop-blur-sm ${isOpen ? 'left-[0]' : 'left-full'} lg:hidden`}
         onClick={toggleMenu}
       ></div>
       <div className="wrapper flex items-center justify-between">
         <div className="logo">
-          <Link to="/" >
+          <Link to="/">
             {' '}
             <img
               className="max-h-10"

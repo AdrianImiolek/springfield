@@ -6,6 +6,7 @@ import TrustedUs from '../../../components/TrustedUs/TrustedUs';
 import WhySpringfield from '../../../components/WhySpringfield/WhySpringfield';
 import Motion from '../../../components/Motion/Motion';
 import Header from '../../../components/Header/Header';
+import Cookies from '../../../components/Cookies/Cookies';
 
 export default function AboutPage() {
   return (
@@ -21,6 +22,7 @@ export default function AboutPage() {
           <TrustedUs />
           <WhySpringfield />
         </main>
+        <Cookies />
         <Footer />
       </Motion>
     </>

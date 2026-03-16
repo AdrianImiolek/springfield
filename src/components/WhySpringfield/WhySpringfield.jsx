@@ -17,8 +17,8 @@ export default function WhySpringfield() {
   ];
 
   return (
-    <section className="why-springfield wrapper pt-20 pb-20">
-      <h2 className="text-h2 text-center">
+    <section className="why-springfield wrapper  pt-20 pb-20">
+      <h2 className="text-h2 m-5 text-center">
         {' '}
         <span className="gradient-pink-to-blue">Dlaczego</span> Springfield?
       </h2>

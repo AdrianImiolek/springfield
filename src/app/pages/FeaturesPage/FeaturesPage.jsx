@@ -5,6 +5,7 @@ import Header from '../../../components/Header/Header.jsx';
 import Motion from '../../../components/Motion/Motion.jsx';
 import Ai from '../../../components/Ai/Ai.jsx';
 import HowItWorks from '../../../components/HowItWorks/HowItWorks.jsx';
+import Cookies from '../../../components/Cookies/Cookies.jsx';
 
 export default function FeaturesPage() {
   return (
@@ -19,7 +20,7 @@ export default function FeaturesPage() {
           <Ai />
           <HowItWorks />
         </main>
-
+        <Cookies />
         <Footer />
       </Motion>
     </>

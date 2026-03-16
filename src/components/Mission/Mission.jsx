@@ -14,7 +14,7 @@ export default function Mission() {
 
   return (
     <section className="mission wrapper pt-20 pb-20" id="mission">
-      <h2 className="text-h2 text-center">
+      <h2 className="text-h2 text-center m-5">
         Nasz <span className="gradient-pink-to-green">misja</span>{' '}
       </h2>
       {texts.map((text) => (

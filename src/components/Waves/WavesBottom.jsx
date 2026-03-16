@@ -4,7 +4,7 @@ import Wave3 from './Wave3';
 
 export default function WavesBottom({ style }) {
   return (
-    <div className="relative">
+    <div className="relative rotate-180 bottom-[-2px]">
       <Wave1 fill={style.fill} opacity={style.opacity[0]} />
       <Wave2 fill={style.fill} opacity={style.opacity[1]} />
       <Wave3 fill={style.fill} opacity={style.opacity[2]} />

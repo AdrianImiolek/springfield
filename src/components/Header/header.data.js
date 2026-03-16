@@ -64,7 +64,7 @@ export const headerData = [{
     color: "#ef898b",
     hoverColor: "#ffa2a4",
     text: "Masz pytania dotyczące Springfield lub potrzebujesz pomocy? Nasz zespół chętnie odpowie na Twoje pytania i pomoże dobrać najlepsze rozwiązanie dla Twojej firmy.",
-    button: { text: "Zadaj nam pytanie", link: "#contact" }
+    button: { text: "Znajdź nas tutaj", link: "#contact" }
 }
 
 ]

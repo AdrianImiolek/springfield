@@ -17,7 +17,7 @@ export default function TrustedUs() {
 
   return (
     <div className="carousel-trusted-us relative pt-20 pb-20">
-      <h2 className="h2 text-h2 text-center"><span className="gradient-green-to-pink">Zaufali</span>   nam:</h2>
+      <h2 className="h2 text-h2 text-center m-5"><span className="gradient-green-to-pink">Zaufali</span>   nam:</h2>
       <div className="carousel-trusted-us-inner">
         {logos.map((logo) => (
           <TrustedUsLogos
