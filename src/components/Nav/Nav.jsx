@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 export default function Nav() {
@@ -29,7 +29,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`nav fixed top-0 z-90 w-full overflow-hidden bg-white/50 lg:backdrop-blur-sm transition-shadow duration-300 ${isScrolled ? `shadow-xl` : ``}`}
+      className={`nav fixed top-0 z-90 w-full overflow-hidden bg-white/50 transition-shadow duration-300 lg:backdrop-blur-sm ${isScrolled ? `shadow-xl` : ``}`}
     >
       <div
         className={`overflow fixed top-0 bottom-0 w-full bg-black/80 backdrop-blur-sm ${isOpen ? 'left-[0]' : 'left-full'} lg:hidden`}
@@ -72,12 +72,19 @@ export default function Nav() {
         <ul className="links-list text-body hidden items-center justify-start lg:flex">
           {links.map(({ title, link_to }, index) => (
             <li className="p-3" key={index}>
-              <Link
-                className="link border-main-pink duration-100 hover:border-b-2"
+              <NavLink
+                // className={`link border-main-pink duration-100 hover:border-b-2 `}
+                className={({ isActive }) =>
+                  [
+                    'link border-main-pink duration-100',
+                    'hover:border-b-2',
+                    isActive ? 'border-b-2' : '',
+                  ].join(' ')
+                }
                 to={link_to}
               >
                 {title}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>

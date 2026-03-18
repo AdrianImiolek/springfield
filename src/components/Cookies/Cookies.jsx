@@ -23,13 +23,13 @@ export default function Cookies() {
         className={` ${isConsented ? "-bottom-60" : "bottom-0"} cookies-banner bg-main-pink/90 wrapper fixed left-1/2 z-50 flex w-full -translate-x-1/2 flex-wrap items-center justify-evenly gap-10 rounded-t-3xl p-6 text-sm duration-300`}
       >
         <p className="cookies-banner-text">
-          Ta strona korzysta tylko z niezbędnych plików cookie.
+          Nasza strona korzysta tylko z niezbędnych plików cookie, tych potrzebnych do prawidłowego działania.
         </p>
         <button
           className="cookies-banner-button bg-main-blue hover:bg-main-blue-light cursor-pointer rounded-3xl px-6 py-3 whitespace-nowrap transition-colors"
           onClick={acceptCookies}
         >
-          Zapoznałem / łam się
+          Zapoznałem się
         </button>
       </div>
 

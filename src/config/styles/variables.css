@@ -29,15 +29,4 @@
     --text-body: clamp(1rem, 1rem + 0.5vw, 1.8rem);   /* Regular body text */
     --text-body-sm: clamp(0.875rem, 0.80rem + 0.5vw, 1.1rem); /* Small text/captions */
     --text-body-xsm: clamp(0.875rem, 0.75rem + 0.5vw, 0.9rem);
-    
-    /* Navigation */
-    --text-nav-desktop: clamp(1rem, 1rem + 0.75vw, 3rem);
-    --text-nav-mobile: clamp(1.5rem, 1rem + 1vw, 1.75rem);
-    
-    /* Buttons/CTAs */
-    --text-button-lg: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
-    --text-button: clamp(1rem, 0.875rem + 0.5vw, 1.25rem);
-
-    /* Width */
-    --width-logos: clamp(2rem, 2rem + 3vw, 10rem );
 }

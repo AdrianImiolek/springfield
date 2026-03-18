@@ -24,12 +24,9 @@ export default function HowItWorks() {
   ];
 
   const imgs = [
-    { id: 1, img: '/carousel/slide3.jpg' },
-    { id: 2, img: '/carousel/slide3.jpg' },
-    { id: 3, img: '/carousel/slide3.jpg' },
-    { id: 4, img: '/carousel/slide3.jpg' },
-    { id: 5, img: '/carousel/slide3.jpg' },
-    { id: 6, img: '/carousel/slide3.jpg' },
+    { id: 1, img: '/carousel/slide1.png' },
+    { id: 2, img: '/carousel/slide2.png' },
+    { id: 3, img: '/carousel/slide3.png' },
   ];
 
   return (

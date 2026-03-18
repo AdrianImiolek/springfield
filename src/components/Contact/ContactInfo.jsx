@@ -5,7 +5,7 @@ export default function ContactInfo({ title, text, icon, link }) {
         <i className={icon}></i> {title}
       </h3>
 
-      {link ? <a href={link}>{text}</a> : <p className="m-2">{text}</p>}
+      {link ? <a className="hover:text-main-blue transition-colors duration-300" href={link}>{text}</a> : <p className="m-2">{text}</p>}
     </div>
   );
 }
